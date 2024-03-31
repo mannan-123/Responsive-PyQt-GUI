@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>cil-settings.png</file>
+    <file>cil-comment-square.png</file>
+    <file>eye.png</file>
+    <file>sun.png</file>
+    <file>cil-window-minimize.png</file>
+    <file>cil-chart-line.png</file>
+    <file>cil-window-maximize.png</file>
+    <file>cil-window-restore.png</file>
+    <file>cil-x.png</file>
+  </qresource>
+</RCC>

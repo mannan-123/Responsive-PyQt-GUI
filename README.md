@@ -1,1 +1,1 @@
-"# Responsive-PyQt-GUI" 
+# Responsive-PyQt-GUI

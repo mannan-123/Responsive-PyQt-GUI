@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_15">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="topFrame">
+      <property name="styleSheet">
+       <string notr="true">#topFrame
+{
+	background-color: #000000;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:600; color:#ffffff;&quot;&gt;EDU&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">#label_2
+{
+	padding-top: 10px
+}</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#c7c7c8;&quot;&gt;SHIELD&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::MinimumExpanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>521</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item alignment="Qt::AlignTop">
+           <widget class="QPushButton" name="minButton">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+#minButton {	
+	border: none;
+	background-color: transparent;
+	padding-bottom:10px;
+}
+#minButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#minButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/cil-window-minimize.png</normaloff>:/icons/cil-window-minimize.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="maxMinButton">
+            <property name="styleSheet">
+             <string notr="true">
+#maxMinButton {	
+	border: none;
+	background-color: transparent;
+}
+#maxMinButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#maxMinButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/cil-window-maximize.png</normaloff>:/icons/cil-window-maximize.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="closeButton">
+            <property name="styleSheet">
+             <string notr="true">
+#closeButton {	
+	border: none;
+	background-color: transparent;
+}
+#closeButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#closeButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/cil-x.png</normaloff>:/icons/cil-x.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="mainFrame">
+      <property name="styleSheet">
+       <string notr="true">#mainFrame
+{
+	background-color: #1a1c1e;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_9">
+         <property name="styleSheet">
+          <string notr="true">#frame_9
+{
+	background-color: #121214;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>48</number>
+          </property>
+          <property name="topMargin">
+           <number>24</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="eduButton">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+#eduButton {	
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align:left;
+}
+#eduButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#eduButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>EDU SHEILD</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/cil-chart-line.png</normaloff>:/icons/cil-chart-line.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="selfCheckButton">
+            <property name="styleSheet">
+             <string notr="true">
+#selfCheckButton {	
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align:left;
+}
+#selfCheckButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#selfCheckButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>SELF CHECK</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/eye.png</normaloff>:/icons/eye.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="faqButton">
+            <property name="styleSheet">
+             <string notr="true">
+#faqButton {	
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align:left;
+}
+#faqButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#faqButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>FAQ</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/sun.png</normaloff>:/icons/sun.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="aboutButton">
+            <property name="styleSheet">
+             <string notr="true">
+#aboutButton {	
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align:left;
+}
+#aboutButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#aboutButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>ABOUT</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/cil-comment-square.png</normaloff>:/icons/cil-comment-square.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="settingButton">
+            <property name="styleSheet">
+             <string notr="true">
+#settingButton {	
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align:left;
+}
+#settingButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#settingButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons/icons.qrc">
+              <normaloff>:/icons/cil-settings.png</normaloff>:/icons/cil-settings.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::MinimumExpanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>78</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="styleSheet">
+              <string notr="true">#frame_2
+{
+	background-color: #1a1c1e;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>330</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;MAIN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_10">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_11">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_5">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_5">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;ATTACH FILE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="attachButton">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>32</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">
+#attachButton {	
+	color: #FFFFFF;
+	font-size:11px;
+	background-color: #686775;
+}
+#attachButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#attachButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>CLICK TO ATTACH</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_12">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <item>
+                        <widget class="QPushButton" name="startButton">
+                         <property name="minimumSize">
+                          <size>
+                           <width>64</width>
+                           <height>64</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">
+#startButton {	
+	color: #FFFFFF;
+	font-size:22px;
+	font-weight: bold;
+	background-color: #686775;
+	
+}
+#startButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#startButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>START</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;* PLEASE MAKE SURE THAT FILE IS IN THE SUPPORTED FORMAT. REFER TO THE FAQ PAGE FOR MORE INFO.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_8">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="minimumSize">
+                    <size>
+                     <width>330</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;FILE INFO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_13">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QFormLayout" name="formLayout">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_7">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;FILE NAME:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="fIleNamelabel">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#3a3a3b;&quot;&gt;NOT ATTACHED&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_9">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;FILE SIZE:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLabel" name="fIleSizelabel">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#3a3a3b;&quot;&gt;0 BYTES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_11">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;EMAIL COUNT:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLabel" name="EmailCountlabel">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#3a3a3b;&quot;&gt;0 EMAILS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::MinimumExpanding</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>77</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="styleSheet">
+              <string notr="true">#frame_3
+{
+	background-color: #1a1c1e;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_4">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <property name="spacing">
+                  <number>18</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;MULTI-LANGUAGE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="checkBox">
+                   <property name="styleSheet">
+                    <string notr="true">#checkBox
+{
+	color: #FFFFFF;
+	font-size: 14px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>ENABLE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;Enabling this setting will send the email with language of that person.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::MinimumExpanding</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>55</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_5">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;TERMS OF USE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="checkBox_2">
+                   <property name="styleSheet">
+                    <string notr="true">#checkBox_2
+{
+	color: #FFFFFF;
+	font-size: 14px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>I APPROVE TO THE TERMS OF USE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::MinimumExpanding</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>127</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_6">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;TOTAL MAILS SENT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_14">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QFormLayout" name="formLayout_2">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_14">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;NOTIFIED:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="fIleNamelabel_2">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#3a3a3b;&quot;&gt;4,203 STUDENTS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QFrame" name="frame_15">
+             <property name="styleSheet">
+              <string notr="true">#frame_15
+{
+	background-color: #1a1c1e;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;Self-Check&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="label_16">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Search for your email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_16">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLineEdit" name="searchlineEdit">
+                   <property name="minimumSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="searchButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+#searchButton {	
+	color: #FFFFFF;
+	font-size:16px;
+	background-color: #686775;
+}
+#searchButton:hover {
+	background-color: rgb(52, 59, 72);
+}
+#searchButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Search</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::MinimumExpanding</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>362</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_3">
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QFrame" name="frame_17">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;FAQ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="styleSheet">
+                 <string notr="true">#scrollArea
+{
+	background-color: #1a1c1e;
+}</string>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>115</width>
+                   <height>7077</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#scrollAreaWidgetContents
+{
+	background-color: #1a1c1e;
+}</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QLabel" name="label_17">
+                    <property name="styleSheet">
+                     <string notr="true">#label_17
+{
+	background-color: #1a1c1e;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a name=&quot;google_ads_iframe_/15184186,22440292294/lipsumcom_right_siderail_0__container__&quot;/&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, nulla aliquet consectetur imperdiet, dolor odio eleifend neque, vel tristique libero ipsum eget massa. Nunc vehicula, turpis eu tincidunt tempor, velit risus gravida sapien, in rutrum tortor orci euismod diam. Aliquam ultrices mauris sed mattis tempus. Pellentesque vel justo eget velit aliquet elementum. Suspendisse vel tempus eros. Sed eget sagittis lorem. Nulla at ipsum blandit, aliquet nisl id, rutrum lectus. Nulla facilisi. Sed porta tortor est, eget bibendum urna convallis pharetra. Nunc non molestie nibh, a iaculis urna. Integer nec finibus lacus. Nulla ultrices luctus elementum.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Vivamus fringilla nulla non augue pretium, nec vulputate velit laoreet. Curabitur varius eros id turpis elementum condimentum. Proin placerat turpis sed ligula scelerisque, sit amet tristique nisi fringilla. Aenean ut massa sed erat consectetur ultrices. Nulla fringilla, ligula nec consectetur aliquet, dui leo ultrices mi, eu fermentum nisi risus eget metus. Fusce sed lorem nec ante consectetur aliquam nec in eros. Etiam diam orci, sollicitudin pharetra mollis ac, pharetra convallis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc rhoncus pharetra ex, non lobortis urna tristique eget. Phasellus tincidunt ante vel libero gravida placerat. Aliquam mattis eget magna at rhoncus. Praesent dictum magna eget velit venenatis pretium. Vivamus viverra mauris eu mi faucibus varius. Suspendisse potenti. Proin nec lorem arcu.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Fusce a tortor malesuada, lacinia lorem sit amet, cursus purus. Duis finibus enim quis sem tristique scelerisque. Vivamus tincidunt consequat sem in vehicula. Donec vel sapien elementum risus malesuada dignissim ut sed dolor. Quisque non volutpat sem. Duis ipsum arcu, dictum vitae nisl et, condimentum facilisis justo. Vestibulum lacinia dolor sit amet ornare luctus. Mauris porttitor scelerisque arcu et lacinia. Praesent lacinia, augue vitae rhoncus scelerisque, dolor dolor viverra mauris, gravida dictum massa neque cursus lacus. Curabitur vel nulla lacinia tortor ultrices condimentum eu gravida erat. Aenean ut congue odio. Etiam mollis leo vitae magna consectetur pulvinar eget eget urna. Sed porttitor purus non nulla ultrices pulvinar. Phasellus turpis turpis, varius elementum lobortis id, aliquet ac quam. Morbi commodo sodales ante ac commodo.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Nullam pellentesque, dui et consequat consequat, leo libero semper mi, a lacinia sem odio eget nulla. Nunc aliquet nisl nulla, vestibulum congue risus convallis eu. Nunc nec consequat dui. Curabitur tristique tristique risus, ac bibendum ex rutrum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque pharetra turpis vitae dui aliquet, non finibus turpis condimentum. Curabitur leo nulla, condimentum ut convallis in, tempor non sapien. Proin consectetur neque eu neque tempor luctus. Morbi nisi ex, ullamcorper rutrum laoreet ornare, condimentum id arcu. In eleifend purus vitae tellus rhoncus, sed commodo est dignissim. Integer a tincidunt tortor. Praesent euismod blandit est nec dictum. Proin varius pharetra purus, non ultrices justo imperdiet eu. Phasellus non dignissim dui. Sed varius maximus elit non faucibus. Aliquam malesuada condimentum lacus, ut hendrerit felis consectetur quis.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Donec egestas ornare dui at rhoncus. Etiam nulla mi, ullamcorper nec blandit et, aliquet sit amet sem. Donec ultricies arcu in vulputate malesuada. Quisque erat ipsum, lobortis et auctor vel, malesuada eget augue. Ut in magna faucibus, hendrerit arcu ut, ullamcorper massa. Duis mattis elit eget auctor dapibus. Ut posuere aliquam laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent imperdiet mattis volutpat. Nulla fringilla libero ut metus consectetur suscipit. Donec interdum luctus dui, eget molestie neque. Fusce pellentesque, purus vitae scelerisque semper, tellus purus varius lacus, venenatis dignissim nisi mi id arcu. Curabitur euismod eros ac laoreet cursus. Curabitur viverra arcu eget ex suscipit, at blandit lorem ultrices. Cras et sem velit.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_4">
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <item>
+            <widget class="QFrame" name="frame_18">
+             <property name="styleSheet">
+              <string notr="true">#framel_18
+{
+	background-color: #1a1c1e;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;ABOUT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="scrollArea_2">
+                <property name="styleSheet">
+                 <string notr="true">#scrollArea
+{
+	background-color: #1a1c1e;
+}</string>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>115</width>
+                   <height>7077</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#scrollAreaWidgetContents_2
+{
+	background-color: #1a1c1e;
+}</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item>
+                   <widget class="QLabel" name="label_18">
+                    <property name="styleSheet">
+                     <string notr="true">#label_18
+{
+	background-color: #1a1c1e;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a name=&quot;google_ads_iframe_/15184186,22440292294/lipsumcom_right_siderail_0__container__&quot;/&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, nulla aliquet consectetur imperdiet, dolor odio eleifend neque, vel tristique libero ipsum eget massa. Nunc vehicula, turpis eu tincidunt tempor, velit risus gravida sapien, in rutrum tortor orci euismod diam. Aliquam ultrices mauris sed mattis tempus. Pellentesque vel justo eget velit aliquet elementum. Suspendisse vel tempus eros. Sed eget sagittis lorem. Nulla at ipsum blandit, aliquet nisl id, rutrum lectus. Nulla facilisi. Sed porta tortor est, eget bibendum urna convallis pharetra. Nunc non molestie nibh, a iaculis urna. Integer nec finibus lacus. Nulla ultrices luctus elementum.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Vivamus fringilla nulla non augue pretium, nec vulputate velit laoreet. Curabitur varius eros id turpis elementum condimentum. Proin placerat turpis sed ligula scelerisque, sit amet tristique nisi fringilla. Aenean ut massa sed erat consectetur ultrices. Nulla fringilla, ligula nec consectetur aliquet, dui leo ultrices mi, eu fermentum nisi risus eget metus. Fusce sed lorem nec ante consectetur aliquam nec in eros. Etiam diam orci, sollicitudin pharetra mollis ac, pharetra convallis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc rhoncus pharetra ex, non lobortis urna tristique eget. Phasellus tincidunt ante vel libero gravida placerat. Aliquam mattis eget magna at rhoncus. Praesent dictum magna eget velit venenatis pretium. Vivamus viverra mauris eu mi faucibus varius. Suspendisse potenti. Proin nec lorem arcu.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Fusce a tortor malesuada, lacinia lorem sit amet, cursus purus. Duis finibus enim quis sem tristique scelerisque. Vivamus tincidunt consequat sem in vehicula. Donec vel sapien elementum risus malesuada dignissim ut sed dolor. Quisque non volutpat sem. Duis ipsum arcu, dictum vitae nisl et, condimentum facilisis justo. Vestibulum lacinia dolor sit amet ornare luctus. Mauris porttitor scelerisque arcu et lacinia. Praesent lacinia, augue vitae rhoncus scelerisque, dolor dolor viverra mauris, gravida dictum massa neque cursus lacus. Curabitur vel nulla lacinia tortor ultrices condimentum eu gravida erat. Aenean ut congue odio. Etiam mollis leo vitae magna consectetur pulvinar eget eget urna. Sed porttitor purus non nulla ultrices pulvinar. Phasellus turpis turpis, varius elementum lobortis id, aliquet ac quam. Morbi commodo sodales ante ac commodo.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Nullam pellentesque, dui et consequat consequat, leo libero semper mi, a lacinia sem odio eget nulla. Nunc aliquet nisl nulla, vestibulum congue risus convallis eu. Nunc nec consequat dui. Curabitur tristique tristique risus, ac bibendum ex rutrum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque pharetra turpis vitae dui aliquet, non finibus turpis condimentum. Curabitur leo nulla, condimentum ut convallis in, tempor non sapien. Proin consectetur neque eu neque tempor luctus. Morbi nisi ex, ullamcorper rutrum laoreet ornare, condimentum id arcu. In eleifend purus vitae tellus rhoncus, sed commodo est dignissim. Integer a tincidunt tortor. Praesent euismod blandit est nec dictum. Proin varius pharetra purus, non ultrices justo imperdiet eu. Phasellus non dignissim dui. Sed varius maximus elit non faucibus. Aliquam malesuada condimentum lacus, ut hendrerit felis consectetur quis.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Donec egestas ornare dui at rhoncus. Etiam nulla mi, ullamcorper nec blandit et, aliquet sit amet sem. Donec ultricies arcu in vulputate malesuada. Quisque erat ipsum, lobortis et auctor vel, malesuada eget augue. Ut in magna faucibus, hendrerit arcu ut, ullamcorper massa. Duis mattis elit eget auctor dapibus. Ut posuere aliquam laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent imperdiet mattis volutpat. Nulla fringilla libero ut metus consectetur suscipit. Donec interdum luctus dui, eget molestie neque. Fusce pellentesque, purus vitae scelerisque semper, tellus purus varius lacus, venenatis dignissim nisi mi id arcu. Curabitur euismod eros ac laoreet cursus. Curabitur viverra arcu eget ex suscipit, at blandit lorem ultrices. Cras et sem velit.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_5">
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <item>
+            <widget class="QFrame" name="frame_19">
+             <property name="styleSheet">
+              <string notr="true">#framel_19
+{
+	background-color: #1a1c1e;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_19">
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;SETTINGS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="scrollArea_3">
+                <property name="styleSheet">
+                 <string notr="true">#scrollArea
+{
+	background-color: #1a1c1e;
+}</string>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>115</width>
+                   <height>7077</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#scrollAreaWidgetContents_3
+{
+	background-color: #1a1c1e;
+}</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="styleSheet">
+                     <string notr="true">#label_19
+{
+	background-color: #1a1c1e;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a name=&quot;google_ads_iframe_/15184186,22440292294/lipsumcom_right_siderail_0__container__&quot;/&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, nulla aliquet consectetur imperdiet, dolor odio eleifend neque, vel tristique libero ipsum eget massa. Nunc vehicula, turpis eu tincidunt tempor, velit risus gravida sapien, in rutrum tortor orci euismod diam. Aliquam ultrices mauris sed mattis tempus. Pellentesque vel justo eget velit aliquet elementum. Suspendisse vel tempus eros. Sed eget sagittis lorem. Nulla at ipsum blandit, aliquet nisl id, rutrum lectus. Nulla facilisi. Sed porta tortor est, eget bibendum urna convallis pharetra. Nunc non molestie nibh, a iaculis urna. Integer nec finibus lacus. Nulla ultrices luctus elementum.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Vivamus fringilla nulla non augue pretium, nec vulputate velit laoreet. Curabitur varius eros id turpis elementum condimentum. Proin placerat turpis sed ligula scelerisque, sit amet tristique nisi fringilla. Aenean ut massa sed erat consectetur ultrices. Nulla fringilla, ligula nec consectetur aliquet, dui leo ultrices mi, eu fermentum nisi risus eget metus. Fusce sed lorem nec ante consectetur aliquam nec in eros. Etiam diam orci, sollicitudin pharetra mollis ac, pharetra convallis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc rhoncus pharetra ex, non lobortis urna tristique eget. Phasellus tincidunt ante vel libero gravida placerat. Aliquam mattis eget magna at rhoncus. Praesent dictum magna eget velit venenatis pretium. Vivamus viverra mauris eu mi faucibus varius. Suspendisse potenti. Proin nec lorem arcu.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Fusce a tortor malesuada, lacinia lorem sit amet, cursus purus. Duis finibus enim quis sem tristique scelerisque. Vivamus tincidunt consequat sem in vehicula. Donec vel sapien elementum risus malesuada dignissim ut sed dolor. Quisque non volutpat sem. Duis ipsum arcu, dictum vitae nisl et, condimentum facilisis justo. Vestibulum lacinia dolor sit amet ornare luctus. Mauris porttitor scelerisque arcu et lacinia. Praesent lacinia, augue vitae rhoncus scelerisque, dolor dolor viverra mauris, gravida dictum massa neque cursus lacus. Curabitur vel nulla lacinia tortor ultrices condimentum eu gravida erat. Aenean ut congue odio. Etiam mollis leo vitae magna consectetur pulvinar eget eget urna. Sed porttitor purus non nulla ultrices pulvinar. Phasellus turpis turpis, varius elementum lobortis id, aliquet ac quam. Morbi commodo sodales ante ac commodo.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Nullam pellentesque, dui et consequat consequat, leo libero semper mi, a lacinia sem odio eget nulla. Nunc aliquet nisl nulla, vestibulum congue risus convallis eu. Nunc nec consequat dui. Curabitur tristique tristique risus, ac bibendum ex rutrum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque pharetra turpis vitae dui aliquet, non finibus turpis condimentum. Curabitur leo nulla, condimentum ut convallis in, tempor non sapien. Proin consectetur neque eu neque tempor luctus. Morbi nisi ex, ullamcorper rutrum laoreet ornare, condimentum id arcu. In eleifend purus vitae tellus rhoncus, sed commodo est dignissim. Integer a tincidunt tortor. Praesent euismod blandit est nec dictum. Proin varius pharetra purus, non ultrices justo imperdiet eu. Phasellus non dignissim dui. Sed varius maximus elit non faucibus. Aliquam malesuada condimentum lacus, ut hendrerit felis consectetur quis.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Arial,sans-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Donec egestas ornare dui at rhoncus. Etiam nulla mi, ullamcorper nec blandit et, aliquet sit amet sem. Donec ultricies arcu in vulputate malesuada. Quisque erat ipsum, lobortis et auctor vel, malesuada eget augue. Ut in magna faucibus, hendrerit arcu ut, ullamcorper massa. Duis mattis elit eget auctor dapibus. Ut posuere aliquam laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent imperdiet mattis volutpat. Nulla fringilla libero ut metus consectetur suscipit. Donec interdum luctus dui, eget molestie neque. Fusce pellentesque, purus vitae scelerisque semper, tellus purus varius lacus, venenatis dignissim nisi mi id arcu. Curabitur euismod eros ac laoreet cursus. Curabitur viverra arcu eget ex suscipit, at blandit lorem ultrices. Cras et sem velit.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
